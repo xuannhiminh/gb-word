@@ -14,6 +14,8 @@
 
     <string name="abc_menu_delete_shortcut_label">删除</string>
     <string name="abc_menu_enter_shortcut_label">输入</string>
+    <string name="scan">扫描</string>
+    <string name="import_file">导入</string>
 
     <string name="abc_search_hint">搜索…</string>
     <string name="abc_searchview_description_clear">清除查询</string>

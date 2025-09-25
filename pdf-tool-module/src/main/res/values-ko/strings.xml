@@ -69,4 +69,21 @@
     <string name="file_created_at">파일 생성 위치</string>
     <string name="success">성공</string>
     <string name="sort">종류</string>
+    <string name="pdf_to_image">PDF를 이미지로</string>
+    <string name="manage">관리</string>
+    <string name="delete_content">이 페이지를 삭제하시겠습니까?</string>
+    <string name="insert_page">페이지 삽입</string>
+    <string name="blank_page">빈 페이지</string>
+    <string name="image">이미지</string>
+    <string name="page_size">페이지 크기</string>
+    <string name="follow_previous">이전 따르기</string>
+    <string name="letter">레터</string>
+    <string name="legal">리걸</string>
+    <string name="page_placeholder">페이지 번호 입력...</string>
+    <string name="last_view">마지막 열람</string>
+    <string name="file_size">파일 크기</string>
+    <string name="insert">삽입</string>
+    <string name="extract">추출</string>
+    <string name="select">선택</string>
+
 </resources>

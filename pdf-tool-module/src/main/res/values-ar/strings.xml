@@ -68,4 +68,21 @@
     <string name="file_created_at">تم إنشاء الملف في</string>
     <string name="success">النجاح</string>
     <string name="sort">فرز</string>
+    <string name="pdf_to_image">تحويل PDF إلى صورة</string>
+    <string name="manage">إدارة</string>
+    <string name="delete_content">هل أنت متأكد أنك تريد حذف هذه الصفحة؟</string>
+    <string name="insert_page">إدراج صفحة</string>
+    <string name="blank_page">صفحات فارغة</string>
+    <string name="image">صور</string>
+    <string name="page_size">حجم الصفحة</string>
+    <string name="follow_previous">اتبع السابق</string>
+    <string name="letter">رسالة</string>
+    <string name="legal">قانوني</string>
+    <string name="page_placeholder">أدخل رقم الصفحة...</string>
+    <string name="last_view">آخر مشاهدة</string>
+    <string name="file_size">حجم الملف</string>
+    <string name="insert">إدراج</string>
+    <string name="extract">استخراج</string>
+    <string name="select">تحديد</string>
+
 </resources>

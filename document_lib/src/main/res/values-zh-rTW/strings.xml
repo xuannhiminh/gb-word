@@ -14,6 +14,8 @@
 
     <string name="abc_menu_delete_shortcut_label">刪除</string>
     <string name="abc_menu_enter_shortcut_label">輸入</string>
+    <string name="scan">掃描</string>
+    <string name="import_file">匯入</string>
 
     <string name="abc_search_hint">搜尋…</string>
     <string name="abc_searchview_description_clear">清除查詢</string>

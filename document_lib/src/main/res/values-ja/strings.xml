@@ -13,6 +13,8 @@
     <string name="abc_menu_delete_shortcut_label">消去</string>
     <string name="abc_menu_enter_shortcut_label">入力</string>
     <string name="accept_all_file_permission_edit2">ファイルを編集して保存するには、すべてのファイルアクセスの許可が必要です。</string>
+    <string name="scan">スキャン</string>
+    <string name="import_file">インポート</string>
 
     <string name="abc_search_hint">探す…</string>
     <string name="abc_searchview_description_clear">クエリをクリア</string>

@@ -323,7 +323,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/tv_time_1"
                     tools:text="100.000đ" />
 
-                <com.pdf.pdfreader.pdfviewer.editor.screen.premium.LineCenterText
+                <com.word.office.docx.viewer.document.editor.reader.screen.premium.LineCenterText
                     android:id="@+id/tv_price_discount_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -394,7 +394,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/tv_time_2"
                     tools:text="100.000đ" />
 
-                <com.pdf.pdfreader.pdfviewer.editor.screen.premium.LineCenterText
+                <com.word.office.docx.viewer.document.editor.reader.screen.premium.LineCenterText
                     android:id="@+id/tv_price_discount_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

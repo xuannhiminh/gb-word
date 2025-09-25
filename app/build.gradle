@@ -20,17 +20,17 @@ android {
 //    compileSdkVersion 33
     compileSdkVersion 35
     defaultConfig {
-        applicationId "com.pdf.pdfreader.pdfviewer.editor"
+        applicationId "com.word.office.docx.viewer.document.editor.reader"
         minSdkVersion 28
         targetSdkVersion 35
-        versionCode 113
-        versionName "1.1.3"
+        versionCode 100
+        versionName "1.0.0"
 
         vectorDrawables.useSupportLibrary = true
 //        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
         def formattedDate = new Date().format('MMM.dd.yyyy')
-        archivesBaseName = "GB26_PDF_v${versionName}(${versionCode})_${formattedDate}"
+        archivesBaseName = "GB28_Word_v${versionName}(${versionCode})_${formattedDate}"
     }
 
 //    signingConfigs {
@@ -85,7 +85,7 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
-    namespace 'com.pdf.pdfreader.pdfviewer.editor'
+    namespace 'com.word.office.docx.viewer.document.editor.reader'
 
     // This disables creating test APKs
 //    testVariants.all { it.enabled = false }
@@ -99,6 +99,8 @@ dependencies {
     implementation 'com.akexorcist:localization:1.2.11'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.16.0'
+    implementation "com.google.android.play:review:2.0.2"
+    implementation "com.google.android.play:review-ktx:2.0.2"
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'

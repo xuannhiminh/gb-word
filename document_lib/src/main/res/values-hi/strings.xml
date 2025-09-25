@@ -13,6 +13,8 @@
     <string name="abc_menu_delete_shortcut_label">मिटाना</string>
     <string name="abc_menu_enter_shortcut_label">प्रवेश करना</string>
     <string name="accept_all_file_permission_edit2">फ़ाइलों को संपादित और सहेजने के लिए, कृपया सभी फ़ाइलों की पहुंच की अनुमति दें।</string>
+    <string name="scan">स्कैन</string>
+    <string name="import_file">आयात करें</string>
 
     <string name="abc_search_hint">खोज…</string>
     <string name="abc_searchview_description_clear">क्वेरी साफ़ करें</string>

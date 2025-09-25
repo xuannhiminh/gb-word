@@ -12,6 +12,8 @@
 
     <string name="abc_menu_delete_shortcut_label">حذف</string>
     <string name="abc_menu_enter_shortcut_label">أدخل</string>
+    <string name="scan">مسح</string>
+    <string name="import_file">استيراد</string>
 
     <string name="abc_search_hint">يبحث…</string>
     <string name="abc_searchview_description_clear">مسح الاستعلام</string>

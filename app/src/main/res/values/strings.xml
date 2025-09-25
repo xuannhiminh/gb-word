@@ -29,8 +29,9 @@
     <string name="language_20" translatable="false">Español (Latinoamérica)</string>
     <string name="language_21" translatable="false">Português (Brasil)</string>
     <string name="language_22" translatable="false">Bahasa Indonesia</string>
+    <string name="language_23" translatable="false">Hebrew</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="select">Selected</string>
 
@@ -344,6 +345,7 @@
     <string name="language">Language</string>
     <string name="permission_required">Permission Required</string>
     <string name="set_pdf_reader_as_your_default_pdf_file_viewer">Set <b>%s</b> as your default PDF File Viewer</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Set <b>%s</b> as your default Word File Viewer</string>
     <string name="pick_this_option_to_open_files_fast_and_make_reading_super_easy_and_fun">Pick this option to open files fast and make reading super easy and fun!</string>
     <string name="set_as_default">Set as Default</string>
     <string name="select_pdf_reader_icon_and_click_always_to_set_it_as_default">Select <b>%s</b> icon and click <b>%s</b> to set it as default!</string>
@@ -556,7 +558,7 @@
     <string name="full_premium_features">Enjoy all premium features</string>
     <string name="see_full_offer">See full exclusive offers!</string>
 
-    <string name="app_name_iap">Best All PDF Reader</string>
+    <string name="app_name_iap">Best Docx Reader</string>
     <string name="tagline">Greatly Improve Work Efficiency</string>
     <string name="feature_title">Feature</string>
     <string name="feature_remove_ads">Remove All Ads</string>
@@ -633,5 +635,7 @@
         <item>A4</item>
         <item>Letter</item>
     </string-array>
-
+    <string name="exit_app_content">Are you sure you want to exit the application?</string>
+    <string name="exit_app">😢\nExit</string>
+    <string name="not_exit">🥰\nBack</string>
 </resources>

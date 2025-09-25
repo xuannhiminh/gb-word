@@ -14,6 +14,8 @@
     <string name="abc_menu_delete_shortcut_label">excluir</string>
     <string name="abc_menu_enter_shortcut_label">insira</string>
     <string name="accept_all_file_permission_edit2">Para editar e salvar arquivos, permita a permissão de acesso a todos os arquivos.</string>
+    <string name="scan">Digitalizar</string>
+    <string name="import_file">Importar</string>
 
     <string name="abc_search_hint">Pesquisar…</string>
     <string name="abc_searchview_description_clear">Limpar consulta</string>

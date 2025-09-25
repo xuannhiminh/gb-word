@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="cannot_open_file_Path">Cannot open file: %1$s</string>
     <string name="path_empty">Path empty</string>

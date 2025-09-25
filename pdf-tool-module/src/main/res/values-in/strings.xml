@@ -68,4 +68,20 @@
     <string name="file_created_at">File dibuat di</string>
     <string name="success">Kesuksesan</string>
     <string name="sort">Menyortir</string>
+    <string name="pdf_to_image">PDF ke Gambar</string>
+    <string name="manage">Kelola</string>
+    <string name="delete_content">Apakah Anda yakin ingin menghapus halaman ini?</string>
+    <string name="insert_page">Sisipkan halaman</string>
+    <string name="blank_page">Halaman kosong</string>
+    <string name="image">Gambar</string>
+    <string name="page_size">Ukuran halaman</string>
+    <string name="follow_previous">Ikuti sebelumnya</string>
+    <string name="letter">Surat</string>
+    <string name="legal">Legal</string>
+    <string name="page_placeholder">Masukkan nomor halaman...</string>
+    <string name="last_view">Terakhir dilihat</string>
+    <string name="file_size">Ukuran file</string>
+    <string name="insert">Sisipkan</string>
+    <string name="extract">Ekstrak</string>
+    <string name="select">Pilih</string>
 </resources>

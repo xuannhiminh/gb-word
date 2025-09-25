@@ -39,7 +39,7 @@
 
     <string name="add_in_fav">أضف في المفضلة</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">تصفح المزيد من الملفات</string>
 
@@ -542,5 +542,6 @@
    <string name="feedback_disclaimer">من خلال إرسال هذا البريد الإلكتروني، فإنك توافق على مشاركة المعلومات أعلاه معنا للمساعدة في تحسين التطبيق.</string>
     <string name="start_free_trial">ابدأ التجربة المجانية</string>
     <string name="update_required">هذا الإصدار قديم. يرجى تحديث التطبيق</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">تعيين <b>%s</b> كعارض افتراضي لملفات Word</string>
 
 </resources>

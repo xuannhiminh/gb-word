@@ -460,6 +460,7 @@
     <string name="deliver_better_experience">We streven ernaar om een betere ervaring te bieden.</string>
     <string name="feature_request_limit">U kunt pas na 1 uur opnieuw verzenden.</string>
 
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Stel <b>%s</b> in als uw standaard Word-bestandsviewer</string>
 
     <string name="fix_your_issue">Informatie zodat wij uw probleem sneller kunnen verhelpen</string>
     <string name="your_feedback">Uw feedback</string>

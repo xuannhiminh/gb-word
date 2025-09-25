@@ -15,20 +15,20 @@
       android:strokeLineJoin="round"
       android:strokeWidth="1.8"
       android:fillColor="#00000000"
-      android:strokeColor="#FF1F44"
+      android:strokeColor="@color/primaryColor"
       android:strokeLineCap="round"/>
   <path
       android:pathData="M7,7H11.5"
       android:strokeLineJoin="round"
       android:strokeWidth="1.8"
       android:fillColor="#00000000"
-      android:strokeColor="#FF1F44"
+      android:strokeColor="@color/primaryColor"
       android:strokeLineCap="round"/>
   <path
       android:pathData="M4,18L16,18"
       android:strokeLineJoin="round"
       android:strokeWidth="1.8"
       android:fillColor="#00000000"
-      android:strokeColor="#FF1F44"
+      android:strokeColor="@color/primaryColor"
       android:strokeLineCap="round"/>
 </vector>

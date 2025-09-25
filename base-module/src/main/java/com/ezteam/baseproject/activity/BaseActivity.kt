@@ -78,7 +78,7 @@ open abstract class BaseActivity<B : ViewBinding> : LocalizationActivity() {
             val spannable = if (showIcon) SpannableString("$appName\u00A0") else SpannableString(appName)
 
             val startIndex = 0
-            val endIndex = appName.indexOf(' ', appName.indexOf(' ') + 1).takeIf { it >= 0 } ?: appName.length
+            val endIndex = appName.indexOf(' ').takeIf { it >= 0 } ?: appName.length
 
             val redColor = ContextCompat.getColor(this, R.color.primaryColor)
             spannable.setSpan(
@@ -94,27 +94,27 @@ open abstract class BaseActivity<B : ViewBinding> : LocalizationActivity() {
                 endIndex,
                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
             )
-            if (showIcon) {
-                val drawable = ContextCompat.getDrawable(this, R.drawable.ic_premium_small)
-                val iconSizeInDp = 16f
-                val iconSizeInPx = TypedValue.applyDimension(
-                    TypedValue.COMPLEX_UNIT_DIP,
-                    iconSizeInDp,
-                    resources.displayMetrics
-                ).toInt()
-
-                drawable?.setBounds(0, 0, iconSizeInPx, iconSizeInPx)
-
-                drawable?.let {
-                    val imageSpan = TopAlignImageSpan(it)
-                    spannable.setSpan(
-                        imageSpan,
-                        spannable.length - 1,
-                        spannable.length,
-                        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                    )
-                }
-            }
+//            if (showIcon) {
+//                val drawable = ContextCompat.getDrawable(this, R.drawable.ic_premium_small)
+//                val iconSizeInDp = 16f
+//                val iconSizeInPx = TypedValue.applyDimension(
+//                    TypedValue.COMPLEX_UNIT_DIP,
+//                    iconSizeInDp,
+//                    resources.displayMetrics
+//                ).toInt()
+//
+//                drawable?.setBounds(0, 0, iconSizeInPx, iconSizeInPx)
+//
+//                drawable?.let {
+//                    val imageSpan = TopAlignImageSpan(it)
+//                    spannable.setSpan(
+//                        imageSpan,
+//                        spannable.length - 1,
+//                        spannable.length,
+//                        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+//                    )
+//                }
+//            }
 
 
             return spannable

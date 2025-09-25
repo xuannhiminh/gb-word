@@ -22,7 +22,7 @@
 
     <string name="add_in_fav">Añadir a favoritos</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">Examinar más archivos</string>
 
@@ -549,4 +549,6 @@
     <string name="your_feedback">Tus comentarios</string>
    <string name="feedback_disclaimer">Al enviar este correo electrónico, aceptas compartir la información anterior con nosotros para ayudar a mejorar la aplicación.</string>
     <string name="update_required">This version is outdated. Please update the app</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Set <b>%s</b> as your default Word File Viewer</string>
+
 </resources>

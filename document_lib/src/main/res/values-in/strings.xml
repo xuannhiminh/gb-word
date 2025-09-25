@@ -13,6 +13,8 @@
     <string name="abc_menu_delete_shortcut_label">menghapus</string>
     <string name="abc_menu_enter_shortcut_label">memasuki</string>
     <string name="accept_all_file_permission_edit2">Untuk mengedit dan menyimpan file, izinkan izin akses semua file.</string>
+    <string name="scan">Pindai</string>
+    <string name="import_file">Impor</string>
 
     <string name="abc_search_hint">Mencari…</string>
     <string name="abc_searchview_description_clear">Hapus kueri</string>

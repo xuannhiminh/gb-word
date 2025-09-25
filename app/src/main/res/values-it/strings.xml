@@ -34,6 +34,7 @@
     <string name="open">Apri</string>
     <string name="add_in_fav">Aggiungi ai preferiti</string>
     <string name="start_free_trial">Start Free Trial</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Imposta <b>%s</b> come visualizzatore predefinito di file Word</string>
 
     <string name="browse_more_files">Sfoglia altri file</string>
     <string name="cancel">Annulla</string>

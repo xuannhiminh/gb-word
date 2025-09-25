@@ -69,4 +69,21 @@
     <string name="file_created_at">फ़ाइल यहां बनाई गई है</string>
     <string name="success">सफलता</string>
     <string name="sort">क्रम से लगाना</string>
+    <string name="pdf_to_image">PDF से छवि</string>
+    <string name="manage">प्रबंधित करें</string>
+    <string name="delete_content">क्या आप वाकई इस पेज को हटाना चाहते हैं?</string>
+    <string name="insert_page">पेज जोड़ें</string>
+    <string name="blank_page">खाली पेज</string>
+    <string name="image">छवियाँ</string>
+    <string name="page_size">पेज का आकार</string>
+    <string name="follow_previous">पिछला अनुसरण करें</string>
+    <string name="letter">पत्र</string>
+    <string name="legal">कानूनी</string>
+    <string name="page_placeholder">पेज नंबर दर्ज करें...</string>
+    <string name="last_view">अंतिम बार देखा गया</string>
+    <string name="file_size">फ़ाइल का आकार</string>
+    <string name="insert">जोड़ें</string>
+    <string name="extract">निकालें</string>
+    <string name="select">चुनें</string>
+
 </resources>

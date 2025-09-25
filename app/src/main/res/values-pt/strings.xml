@@ -22,7 +22,7 @@
 
     <string name="add_in_fav">Adicionar aos favoritos</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">Procurar mais arquivos</string>
     <string name="start_free_trial">Start Free Trial</string>
@@ -30,6 +30,7 @@
     <string name="cancel">Cancelar</string>
 
     <string name="change_language">Mudar idioma</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Defina <b>%s</b> como o seu visualizador de arquivos Word padrão</string>
 
     <string name="change_language_description">Você pode alterar o idioma a partir daqui.</string>
 

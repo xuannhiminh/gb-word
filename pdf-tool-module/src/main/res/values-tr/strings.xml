@@ -69,4 +69,21 @@
     <string name="file_created_at">Dosya şurada oluşturulur:</string>
     <string name="success">Başarı</string>
     <string name="sort">Çeşit</string>
+    <string name="pdf_to_image">PDF\'den Görüntüye</string>
+    <string name="manage">Yönet</string>
+    <string name="delete_content">Bu sayfayı silmek istediğinizden emin misiniz?</string>
+    <string name="insert_page">Sayfa ekle</string>
+    <string name="blank_page">Boş sayfalar</string>
+    <string name="image">Görseller</string>
+    <string name="page_size">Sayfa boyutu</string>
+    <string name="follow_previous">Öncekini takip et</string>
+    <string name="letter">Letter</string>
+    <string name="legal">Legal</string>
+    <string name="page_placeholder">Sayfa numarasını girin...</string>
+    <string name="last_view">Son görüntülenen</string>
+    <string name="file_size">Dosya boyutu</string>
+    <string name="insert">Ekle</string>
+    <string name="extract">Çıkart</string>
+    <string name="select">Seç</string>
+
 </resources>

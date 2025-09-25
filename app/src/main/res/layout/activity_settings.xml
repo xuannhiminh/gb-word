@@ -118,14 +118,40 @@
         android:paddingHorizontal="@dimen/_18sdp">
 
         <LinearLayout
-            android:id="@+id/func_feature_request"
+            android:id="@+id/func_set_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/item_setting_background"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textFontWeight="400"
+                app:fvTextColor="@color/text1"
+                android:layout_height="wrap_content"
+                app:fvTitle="@string/set_app_default"
+                app:fvIcon="@drawable/icon_setting_widget" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_setting_more"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/func_feature_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_setting_background"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_vertical">
+
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -154,7 +180,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -183,7 +209,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -208,7 +234,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -233,7 +259,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -261,7 +287,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -287,7 +313,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -297,31 +323,6 @@
                 android:layout_height="wrap_content"
                 app:fvTitle="@string/add_widget"
                 app:fvIcon="@drawable/icon_widget_scan" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icon_setting_more"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/func_set_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/item_setting_background"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:gravity="center_vertical">
-
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif"
-                android:textFontWeight="400"
-                app:fvTextColor="@color/text1"
-                android:layout_height="wrap_content"
-                app:fvTitle="@string/set_app_default"
-                app:fvIcon="@drawable/icon_setting_widget" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -341,10 +342,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/item_setting_background"
             android:orientation="horizontal"
+            android:visibility="gone"
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -370,7 +372,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -396,7 +398,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -422,7 +424,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"
@@ -447,7 +449,7 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center_vertical">
 
-            <com.pdf.pdfreader.pdfviewer.editor.view.ItemFunctionView
+            <com.word.office.docx.viewer.document.editor.reader.view.ItemFunctionView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:textSize="18sp"

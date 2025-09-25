@@ -20,12 +20,13 @@
     <string name="intent_label_ppt_print">PPT Yazdır</string>
 
     <string name="click_back_to_app">Ardından uygulamaya dönmek için ⬅ tuşuna basın</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer"><b>%s</b>\'i varsayılan Word dosya görüntüleyiciniz olarak ayarlayın</string>
 
     <string name="start_free_trial">Start Free Trial</string>
 
     <string name="add_in_fav">Favorilere ekle</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">Daha Fazla Dosyaya Göz Atın</string>
 

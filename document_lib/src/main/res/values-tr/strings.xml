@@ -13,6 +13,8 @@
 
     <string name="abc_menu_delete_shortcut_label">silmek</string>
     <string name="abc_menu_enter_shortcut_label">girmek</string>
+    <string name="scan">Tara</string>
+    <string name="import_file">İçe Aktar</string>
 
     <string name="abc_search_hint">Arama…</string>
     <string name="abc_searchview_description_clear">Sorguyu temizle</string>

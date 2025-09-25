@@ -87,7 +87,7 @@ subprojects {
         if (project.plugins.hasPlugin("com.android.application") ||
                 project.plugins.hasPlugin("com.android.library")) {
             dependencies {
-                implementation 'com.github.heaven-std:ads-advance-lib:1.7.3'
+                implementation 'com.github.heaven-std:ads-advance-lib:1.7.7'
             }
         }
         tasks.configureEach { task ->

@@ -13,6 +13,8 @@
     <string name="abc_menu_delete_shortcut_label">effacer</string>
     <string name="abc_menu_enter_shortcut_label">Entrer</string>
     <string name="accept_all_file_permission_edit2">Pour modifier et enregistrer des fichiers, veuillez autoriser l\'accès à tous les fichiers.</string>
+    <string name="scan">Scanner</string>
+    <string name="import_file">Importer</string>
 
     <string name="abc_search_hint">Chercher…</string>
     <string name="abc_searchview_description_clear">Effacer la requête</string>

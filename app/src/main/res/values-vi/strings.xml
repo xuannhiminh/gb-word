@@ -19,11 +19,12 @@
     <string name="intent_label_ppt_smart_editor">Trình chỉnh sửa thông minh PPT</string>
     <string name="intent_label_ppt_print">In PPT</string>
     <string name="start_free_trial">Start Free Trial</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Đặt <b>%s</b> làm trình xem tệp Word mặc định của bạn</string>
 
 
     <string name="add_in_fav">Thêm yêu thích</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">Duyệt các tệp khác</string>
 

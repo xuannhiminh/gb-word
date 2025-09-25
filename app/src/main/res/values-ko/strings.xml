@@ -26,6 +26,7 @@
     <string name="replace_old_file">기존 파일을 교체하시겠습니까?</string>
     <string name="ok">확인</string>
     <string name="start_free_trial">Start Free Trial</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer"><b>%s</b>을(를) 기본 Word 파일 뷰어로 설정하세요</string>
 
     <string name="convert_to_pdf">PDF로 변환</string>
     <string name="pdf_file_name">PDF 파일 이름</string>

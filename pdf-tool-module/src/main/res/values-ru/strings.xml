@@ -69,4 +69,21 @@
     <string name="file_created_at">Файл создан в</string>
     <string name="success">Успех</string>
     <string name="sort">Сортировать</string>
+    <string name="pdf_to_image">PDF в изображение</string>
+    <string name="manage">Управлять</string>
+    <string name="delete_content">Вы уверены, что хотите удалить эту страницу?</string>
+    <string name="insert_page">Вставить страницу</string>
+    <string name="blank_page">Пустые страницы</string>
+    <string name="image">Изображения</string>
+    <string name="page_size">Размер страницы</string>
+    <string name="follow_previous">Следовать за предыдущим</string>
+    <string name="letter">Письмо</string>
+    <string name="legal">Legal</string>
+    <string name="page_placeholder">Введите номер страницы...</string>
+    <string name="last_view">Последний просмотр</string>
+    <string name="file_size">Размер файла</string>
+    <string name="insert">Вставить</string>
+    <string name="extract">Извлечь</string>
+    <string name="select">Выбрать</string>
+
 </resources>

@@ -21,7 +21,7 @@
 
     <string name="start_free_trial">Start Free Trial</string>
 
-    <string name="app_name">All PDF Reader</string>
+    <string name="app_name">Docx Reader</string>
 
     <string name="add_in_fav">Ajouter dans les favoris</string>
 
@@ -547,4 +547,6 @@
     <string name="your_feedback">Vos commentaires</string>
    <string name="feedback_disclaimer">En envoyant cet e-mail, vous acceptez de partager les informations ci-dessus avec nous pour aider à améliorer l\'application.</string>
     <string name="update_required">Cette version est obsolète. Veuillez mettre à jour l’application</string>
+    <string name="set_docx_reader_as_your_default_word_file_viewer">Définissez <b>%s</b> comme votre visionneuse de fichiers Word par défaut</string>
+
 </resources>

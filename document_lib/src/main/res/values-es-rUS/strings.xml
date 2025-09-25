@@ -13,6 +13,8 @@
 
     <string name="abc_menu_delete_shortcut_label">Eliminar</string>
     <string name="abc_menu_enter_shortcut_label">ingresar</string>
+    <string name="scan">Scan</string>
+    <string name="import_file">Import</string>
 
     <string name="abc_search_hint">Búsqueda…</string>
     <string name="abc_searchview_description_clear">Borrar consulta</string>

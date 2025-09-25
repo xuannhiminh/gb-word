@@ -1,12 +1,4 @@
 <resources>
-    <string-array name="fontStyles" translatable="false">
-        <item>عادی</item>
-        <item>پررنگ</item>
-        <item>کج</item>
-        <item>زیرخط‌دار</item>
-        <item>خط خورده</item>
-        <item>پررنگ کج</item>
-    </string-array>
     <string name="merge_pdf">ادغام PDF</string>
     <string name="split_pdf">تقسیم PDF</string>
     <string name="invert_pdf">معکوس</string>

@@ -14,7 +14,7 @@
         android:id="@+id/main_layout"
         tools:context=".screen.main.MainActivity">
 
-    <com.pdf.pdfreader.pdfviewer.editor.view.NonSwipeViewPager
+    <com.word.office.docx.viewer.document.editor.reader.view.NonSwipeViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_marginTop="8dp"
@@ -99,7 +99,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:contentDescription="PDF Icon"
-                            android:src="@drawable/icon_pdf" />
+                            android:src="@drawable/icon_word" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -432,7 +432,7 @@
                 android:text="+2"
                 android:layout_marginStart="8dp"
                 android:textSize="16dp"
-                android:textColor="@color/red"
+                android:textColor="@color/primaryColor"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical" />
 

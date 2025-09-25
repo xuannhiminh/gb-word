@@ -84,7 +84,7 @@
                 android:layout_width="36dp"
                 android:layout_height="47dp"
                 android:layout_marginStart="@dimen/_8sdp"
-                android:src="@drawable/icon_pdf"
+                android:src="@drawable/icon_word"
                 />
             <TextView
                 android:id="@+id/file_name"

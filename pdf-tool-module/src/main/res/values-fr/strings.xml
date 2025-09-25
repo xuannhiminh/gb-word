@@ -69,4 +69,21 @@
     <string name="file_created_at">Le fichier est créé à</string>
     <string name="success">Succès</string>
     <string name="sort">Trier</string>
+    <string name="pdf_to_image">PDF en Image</string>
+    <string name="manage">Gérer</string>
+    <string name="delete_content">Êtes-vous sûr de vouloir supprimer cette page ?</string>
+    <string name="insert_page">Insérer une page</string>
+    <string name="blank_page">Pages vierges</string>
+    <string name="image">Images</string>
+    <string name="page_size">Taille de la page</string>
+    <string name="follow_previous">Suivre le précédent</string>
+    <string name="letter">Lettre</string>
+    <string name="legal">Légal</string>
+    <string name="page_placeholder">Entrez le numéro de page...</string>
+    <string name="last_view">Dernière consultation</string>
+    <string name="file_size">Taille du fichier</string>
+    <string name="insert">Insérer</string>
+    <string name="extract">Extraire</string>
+    <string name="select">Sélectionner</string>
+
 </resources>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#FF1F44</color>
+    <color name="primaryColor">#0474C4</color>
     <color name="iapColor">#FF1F44</color>
+    <color name="text1">#E6FFFFFF</color>
     <color name="text2">#8C8DAF</color>
     <color name="element">#262626</color>
     <color name="negative">#2c2d30</color>
@@ -47,7 +48,7 @@
     <color name="text_title_color">#FFFFFF</color>
     <color name="color_252525">#252525</color>
 
-    <color name="stroke_selected">#FF9BB3</color>
+    <color name="stroke_selected">#2196F3</color>
     <color name="bg_selected">#2A1E22</color>
     <color name="stroke_unselected">#4A4A4A</color>
     <color name="bg_unselected">#1E1E1E</color>

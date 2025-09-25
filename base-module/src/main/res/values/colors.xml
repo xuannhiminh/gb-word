@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#FF1F44</color>
+    <color name="primaryColor">#0474C4</color>
     <color name="iapColor">#FF1F44</color>
     <color name="text1">#040516</color>
     <color name="text2">#8C8DAF</color>
@@ -46,8 +46,8 @@
     <color name="color_252525">#252525</color>
     <color name="ads_background">#ffffff</color>
 
-    <color name="stroke_selected">#FF879B</color>
-    <color name="bg_selected">#FFF5F7</color>
+    <color name="stroke_selected">#2196F3</color>
+    <color name="bg_selected">#E3F2FD</color>
     <color name="stroke_unselected">#F3F4F6</color>
     <color name="bg_unselected">#FFFFFF</color>
 </resources>

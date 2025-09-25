@@ -571,6 +571,8 @@ Clientes"</string>
     <string name="support_help_see_all_n_articles_label">@string/help_see_all_n_articles_label</string>
     <string name="support_sections_list_fragment_error_message">@string/sections_list_fragment_error_message</string>
     <string name="view_article_attachments_error">No se pudieron recuperar los archivos adjuntos</string>
+    <string name="scan">Escanear</string>
+    <string name="import_file">Importar</string>
 
     <string name="view_article_vote_prompt">¿Te resultó útil este artículo</string>
     <string name="zendesk_no_connectivity_error">@string/network_activity_no_connectivity</string>

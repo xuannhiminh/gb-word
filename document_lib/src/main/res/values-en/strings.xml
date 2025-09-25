@@ -12,10 +12,16 @@
 	<string name="abc_capital_off">OFF</string>
 	<string name="abc_capital_on">ON</string>
 	<string name="accept_all_file_permission_edit2">To edit and save files, please allow full file access.</string>
+	<string name="scan">Scan</string>
+	<string name="import_file">Import</string>
 
 	<string name="abc_menu_delete_shortcut_label">delete</string>
 	<string name="abc_menu_enter_shortcut_label">enter</string>
-
+	<string name="guide_step_document">1. Tap on the document area to start editing or viewing</string>
+	<string name="guide_step_keyboard">2. Press the keyboard button to show the keyboard and start editing</string>
+	<string name="guide_step_toolbar">3. Use the toolbar to work with the document</string>
+	<string name="guide_step_highlight">1. Double click or long press at any texts to select</string>
+	<string name="guide_step_highlight_2">2. Press button highlight to highlight</string>
 	<string name="abc_search_hint">Search…</string>
 	<string name="abc_searchview_description_clear">Clear query</string>
 	<string name="abc_searchview_description_query">Search query</string>

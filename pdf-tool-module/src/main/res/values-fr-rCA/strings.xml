@@ -1,12 +1,5 @@
 <resources>
-    <string-array name="fontStyles" translatable="false">
-        <item>NORMAL</item>
-        <item>GRAS</item>
-        <item>ITALIQUE</item>
-        <item>SOULIGNÉ</item>
-        <item>BARRÉ</item>
-        <item>GRASITALIQUE</item>
-    </string-array>
+
     <string name="merge_pdf">Fusionner PDF</string>
     <string name="split_pdf">Diviser PDF</string>
     <string name="invert_pdf">Inverser</string>

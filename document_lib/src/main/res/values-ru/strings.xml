@@ -13,6 +13,8 @@
 
     <string name="abc_menu_delete_shortcut_label">Удалить</string>
     <string name="abc_menu_enter_shortcut_label">войти</string>
+    <string name="scan">Сканировать</string>
+    <string name="import_file">Импортировать</string>
 
     <string name="abc_search_hint">Поиск…</string>
     <string name="abc_searchview_description_clear">Очистить запрос</string>

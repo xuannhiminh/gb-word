@@ -14,6 +14,8 @@
 
     <string name="abc_menu_delete_shortcut_label">elimina</string>
     <string name="abc_menu_enter_shortcut_label">invio</string>
+    <string name="scan">Scansiona</string>
+    <string name="import_file">Importa</string>
 
     <string name="abc_search_hint">Cerca…</string>
     <string name="abc_searchview_description_clear">Cancella ricerca</string>

@@ -69,4 +69,21 @@
     <string name="file_created_at">ファイルは次の場所に作成されます</string>
     <string name="success">成功</string>
     <string name="sort">選別</string>
+    <string name="pdf_to_image">PDFを画像に変換</string>
+    <string name="manage">管理</string>
+    <string name="delete_content">このページを削除してもよろしいですか？</string>
+    <string name="insert_page">ページを挿入</string>
+    <string name="blank_page">空白ページ</string>
+    <string name="image">画像</string>
+    <string name="page_size">ページサイズ</string>
+    <string name="follow_previous">前に従う</string>
+    <string name="letter">レター</string>
+    <string name="legal">リーガル</string>
+    <string name="page_placeholder">ページ番号を入力...</string>
+    <string name="last_view">最後に表示</string>
+    <string name="file_size">ファイルサイズ</string>
+    <string name="insert">挿入</string>
+    <string name="extract">抽出</string>
+    <string name="select">選択</string>
+
 </resources>
