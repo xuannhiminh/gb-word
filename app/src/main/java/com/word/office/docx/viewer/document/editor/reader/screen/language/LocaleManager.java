@@ -115,7 +115,7 @@ public class LocaleManager {
             "Italiano",
             "Français (Canada)",
             "Deutsch",
-            "Hebrew",
+            "עִבְרִית",
             "Español (US)",
             "Español (Latinoamérica)",
             "Português (Brasil)"
@@ -143,7 +143,7 @@ public class LocaleManager {
             "it",
             "fr-CA",
             "de",
-            "he",
+            "iw_IL",
             "es-US",
             "es-MX",
             "pt-BR"

@@ -57,7 +57,7 @@ public class Toolbox {
                 return R.drawable.flag_ca;
             case "de":
                 return R.drawable.flag_de;
-            case "he":
+            case "iw-IL":
                 return R.drawable.flag_he;
             case "es-US":
                 return R.drawable.flag_us;

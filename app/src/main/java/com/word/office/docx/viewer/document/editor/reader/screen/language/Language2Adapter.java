@@ -220,7 +220,7 @@ public class Language2Adapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 return "Russian";
             case "hi":
                 return "Hindi";
-            case "he":
+            case "iw-IL":
                 return "Israel";
             default:
                 return "";

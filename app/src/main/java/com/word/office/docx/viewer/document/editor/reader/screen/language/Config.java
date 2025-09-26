@@ -31,7 +31,7 @@ public class Config {
             new ItemSelected(R.string.language_2, "vi"),
             new ItemSelected(R.string.language_3, "ru"),
             new ItemSelected(R.string.language_4, "hi"),
-            new ItemSelected(R.string.language_23, "he"),
+            new ItemSelected(R.string.language_23, "iw-IL"),
     };
 
 
