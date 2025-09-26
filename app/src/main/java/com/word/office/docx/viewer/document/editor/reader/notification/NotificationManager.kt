@@ -178,7 +178,7 @@ class NotificationManager(private val context: Context) {
         buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, it) }
 
         val fileExtension = filePath?.substringAfterLast(".")
-        val backgroundResource = FILE_EXTENSION_TO_BACKGROUND.getOrDefault(fileExtension, R.drawable.btn_background_red)
+        val backgroundResource = FILE_EXTENSION_TO_BACKGROUND.getOrDefault(fileExtension, R.drawable.btn_background_primary)
         remoteViews.setInt(R.id.button_open, "setBackgroundResource", backgroundResource)
 
         val openAppIntent = Intent(context, SplashActivity::class.java).apply {
@@ -221,7 +221,7 @@ class NotificationManager(private val context: Context) {
         val fileExtension = filePath?.substringAfterLast(".")
         val iconResource = FILE_EXTENSION_TO_ICON.getOrDefault(fileExtension, R.drawable.icon_pdf)
         remoteViews.setImageViewResource(R.id.image_file_icon, iconResource)
-        val backgroundResource = FILE_EXTENSION_TO_BACKGROUND.getOrDefault(fileExtension, R.drawable.btn_background_red)
+        val backgroundResource = FILE_EXTENSION_TO_BACKGROUND.getOrDefault(fileExtension, R.drawable.btn_background_primary)
         remoteViews.setInt(R.id.button_open, "setBackgroundResource", backgroundResource)
 
         val openAppIntent = Intent(context, SplashActivity::class.java).apply {

@@ -127,7 +127,7 @@
             android:id="@+id/go_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_background_red"
+            android:background="@drawable/btn_background_primary"
             android:elevation="0dp"
             android:text="@string/button_permission"
             android:letterSpacing="0"

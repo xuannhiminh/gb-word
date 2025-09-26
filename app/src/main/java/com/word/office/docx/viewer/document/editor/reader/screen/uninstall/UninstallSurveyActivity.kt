@@ -101,11 +101,7 @@ class UninstallSurveyActivity : PdfBaseActivity<ActivityUninstallReasonBinding>(
     }
     override fun onResume() {
         super.onResume()
-        if (TemporaryStorage.isLoadAds) {
-            loadNativeNomedia()
-        } else {
-            Log.d("Load Ads", "Not load Ads")
-        }
+        loadNativeNomedia()
     }
 
     private fun loadNativeNomedia() {

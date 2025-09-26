@@ -67,7 +67,7 @@
         android:id="@+id/btn_agree"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_background_red"
+        android:background="@drawable/btn_background_primary"
         android:elevation="0dp"
         android:letterSpacing="0"
         android:layout_marginTop="@dimen/_16sdp"

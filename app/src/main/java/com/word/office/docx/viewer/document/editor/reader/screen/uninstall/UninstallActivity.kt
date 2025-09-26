@@ -161,7 +161,7 @@ class UninstallActivity : PdfBaseActivity<ActivityUninstallBinding>() {
 
             Admob.getInstance().loadNativeAd(
                 applicationContext,
-                getString(R.string.native_home_v112),
+                getString(R.string.native_keep_user),
                 callback
             )
         } else {

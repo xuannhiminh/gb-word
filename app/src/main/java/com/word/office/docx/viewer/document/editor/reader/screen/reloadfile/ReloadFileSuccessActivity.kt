@@ -82,49 +82,6 @@ class ReloadFileSuccessActivity : PdfBaseActivity<ActivityReloadFileBinding>() {
     override fun initData() {
 
     }
-    private fun loadNativeNomedia2() {
-        if (IAPUtils.isPremium()) {
-            binding.layoutNative.visibility = View.GONE
-            return
-        }
-        Log.d("Load Ads", "Start load Ads")
-        if (SystemUtils.isInternetAvailable(this)) {
-            binding.layoutNative.visibility = View.VISIBLE
-            val loadingView = LayoutInflater.from(this)
-                .inflate(R.layout.ads_native_bot_loading, null)
-            binding.layoutNative.removeAllViews()
-            binding.layoutNative.addView(loadingView)
-
-            val callback = object : NativeCallback() {
-                override fun onNativeAdLoaded(nativeAd: NativeAd?) {
-                    super.onNativeAdLoaded(nativeAd)
-
-                    val layoutRes = R.layout.ads_native_bot
-                    val adView = LayoutInflater.from(this@ReloadFileSuccessActivity)
-                        .inflate(layoutRes, null) as NativeAdView
-
-                    binding.layoutNative.removeAllViews()
-                    binding.layoutNative.addView(adView)
-
-                    // Gán dữ liệu quảng cáo vào view
-                    Admob.getInstance().pushAdsToViewCustom(nativeAd, adView)
-                }
-
-                override fun onAdFailedToLoad() {
-                    super.onAdFailedToLoad()
-                    binding.layoutNative.visibility = View.GONE
-                }
-            }
-
-            Admob.getInstance().loadNativeAd(
-                applicationContext,
-                getString(R.string.native_between_files_home),
-                callback
-            )
-        } else {
-            binding.layoutNative.visibility = View.GONE
-        }
-    }
 
     private fun loadNativeNomedia() {
         if (IAPUtils.isPremium()) {
@@ -189,7 +146,7 @@ class ReloadFileSuccessActivity : PdfBaseActivity<ActivityReloadFileBinding>() {
             return
         } else {
             val loadingView = LayoutInflater.from(this)
-                .inflate(R.layout.ads_native_loading, null)
+                .inflate(R.layout.ads_native_bot_loading, null)
             binding.layoutNative.removeAllViews()
             binding.layoutNative.addView(loadingView)
 
@@ -211,7 +168,7 @@ class ReloadFileSuccessActivity : PdfBaseActivity<ActivityReloadFileBinding>() {
 
             Admob.getInstance().loadNativeAd(
                 applicationContext,
-                getString(R.string.native_home_v112),
+                getString(R.string.native_reload_success),
                 callback
             )
         }

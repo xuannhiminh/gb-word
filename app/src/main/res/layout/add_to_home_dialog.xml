@@ -114,7 +114,7 @@
             android:fontFamily="sans-serif"
             android:textFontWeight="700"
             android:textSize="14sp"
-            android:background="@drawable/btn_background_red"
+            android:background="@drawable/btn_background_primary"
             android:textAllCaps="false"
             android:shadowColor="@android:color/transparent"
             android:elevation="0dp"

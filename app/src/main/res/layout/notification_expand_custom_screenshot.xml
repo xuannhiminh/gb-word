@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/btn_background_red"
+        android:background="@drawable/btn_background_primary"
         android:fontFamily="sans-serif"
         android:text="@string/open_now"
         android:textAllCaps="false"

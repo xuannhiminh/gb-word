@@ -70,7 +70,7 @@ class CreateSuccessActivity : PdfBaseActivity<ActivityCreateSuccessBinding>() {
         if (SystemUtils.isInternetAvailable(this)) {
             binding.layoutNative.visibility = View.VISIBLE
             val loadingView = LayoutInflater.from(this)
-                .inflate(R.layout.ads_native_loading_short, null)
+                .inflate(R.layout.ads_native_bot_loading, null)
             binding.layoutNative.removeAllViews()
             binding.layoutNative.addView(loadingView)
 
@@ -78,7 +78,7 @@ class CreateSuccessActivity : PdfBaseActivity<ActivityCreateSuccessBinding>() {
                 override fun onNativeAdLoaded(nativeAd: NativeAd?) {
                     super.onNativeAdLoaded(nativeAd)
 
-                    val layoutRes = R.layout.ads_native_bot_no_media_short
+                    val layoutRes = R.layout.ads_native_bot
                     val adView = LayoutInflater.from(this@CreateSuccessActivity)
                         .inflate(layoutRes, null) as NativeAdView
 

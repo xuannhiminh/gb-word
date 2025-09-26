@@ -49,7 +49,7 @@
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/btn_background_red"
+        android:background="@drawable/btn_background_primary"
         android:fontFamily="sans-serif"
         android:paddingHorizontal="1dp"
         android:text="@string/open_now"

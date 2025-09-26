@@ -25,6 +25,7 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
+import com.word.office.docx.viewer.document.editor.reader.screen.base.CurrentStatusAdsFiles
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import java.util.Locale
@@ -49,9 +50,7 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
     override fun onStart() {
         super.onStart()
         loadNativeNomedia()
-        if (TemporaryStorage.isLoadAds) {
-            loadNativeAdsMiddleFiles()
-        }
+        loadNativeAdsMiddleFiles()
     }
 
     override fun onStop() {
@@ -118,11 +117,30 @@ class SelectMultipleFilesActivity : PdfBaseActivity<ActivityCheckFileBinding>() 
         }
     }
     private fun loadNativeAdsMiddleFiles() {
-        Admob.getInstance().loadNativeAd(
-            applicationContext,
-            getString(R.string.native_between_files_selectfiles),
-            callback
-        )
+        if (!IAPUtils.isPremium() && SystemUtils.isInternetAvailable(this)) {
+            viewModel.updateAdsFilesStatus(CurrentStatusAdsFiles(true, null))
+            val callback = object : NativeCallback() {
+                override fun onNativeAdLoaded(nativeAd: NativeAd?) {
+                    if (nativeAd != null) {
+                        viewModel.updateAdsFilesStatus(CurrentStatusAdsFiles(true, nativeAd))
+                    } else {
+                        onAdFailedToLoad()
+                    }
+                }
+
+                override fun onAdFailedToLoad() {
+                    viewModel.updateAdsFilesStatus(CurrentStatusAdsFiles(false, null))
+                }
+            }
+
+            Admob.getInstance().loadNativeAd(
+                applicationContext,
+                getString(R.string.native_between_files_selectfiles),
+                callback
+            )
+        } else {
+            viewModel.updateAdsFilesStatus(CurrentStatusAdsFiles(false, null))
+        }
     }
     override fun initView() {
         adapter = FileItemAdapter(this, mutableListOf(), ::onItemClick, ::onSelectedFunc, ::onReactFavorite)

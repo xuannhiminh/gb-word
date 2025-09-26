@@ -261,7 +261,7 @@
         android:enabled="false"
         android:alpha="0.5"
         android:layout_marginHorizontal="@dimen/_16sdp"
-        android:background="@drawable/btn_background_red"
+        android:background="@drawable/btn_background_primary"
         android:textColor="#fff"
         app:layout_constraintTop_toBottomOf="@id/tv_warning"
         app:layout_constraintStart_toStartOf="parent"

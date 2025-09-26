@@ -105,7 +105,7 @@
             <TextView
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_24sdp"
-                android:background="@drawable/btn_background_red"
+                android:background="@drawable/btn_background_primary"
                 android:elevation="0dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
@@ -160,7 +160,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_background_red"
+        android:background="@drawable/btn_background_primary"
         android:elevation="0dp"
         android:letterSpacing="0"
         android:layout_marginTop="@dimen/_40sdp"

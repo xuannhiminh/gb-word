@@ -117,7 +117,7 @@ class ReloadLoadingActivity : BaseActivity<ActivityReloadingBinding>() {
             val startTime = System.currentTimeMillis()
 
             val loadFileDeferred = async { migrateFileDataAndHandleIntentOpeningFile() }
-            val loadAdsDeferred = async { if(FirebaseRemoteConfigUtil.getInstance().isShowAdsReloadFileInter()) loadInterstitialAd(getString(R.string.inter_splash_v112)) else null }
+            val loadAdsDeferred = async { if(FirebaseRemoteConfigUtil.getInstance().isShowAdsReloadFileInter()) loadInterstitialAd(getString(R.string.inter_reload)) else null }
             loadFileDeferred.await()
             val interAd = loadAdsDeferred.await()
 //            preloadLanguageNativeAd()

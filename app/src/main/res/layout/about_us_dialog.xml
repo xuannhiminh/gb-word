@@ -39,7 +39,7 @@
                 android:layout_width="@dimen/_36sdp"
                 android:layout_height="@dimen/_47sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
-                app:srcCompat="@drawable/icon_pdf"
+                app:srcCompat="@drawable/icon_word"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" />
