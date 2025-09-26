@@ -238,7 +238,10 @@ class DefaultReaderGuideDialog : DialogFragment() {
             logEvent("click_set_default_reader")
             val intent = Intent(Intent.ACTION_VIEW).apply {
                 putExtra("${requireContext().packageName}.isToSetDefaultReader", true)
-                setDataAndType(Uri.parse("content://dummy.pdf"), "application/pdf")
+                setDataAndType(
+                    Uri.parse("content://dummy.docx"),
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                )
                 addCategory(Intent.CATEGORY_DEFAULT)
             }
             startActivity(
