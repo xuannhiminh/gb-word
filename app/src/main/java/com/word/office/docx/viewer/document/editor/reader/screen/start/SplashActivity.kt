@@ -82,7 +82,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         // If you want to allow in some cases, put condition here
     }
 
-    private var typeOfStartup = 1;
+    private var typeOfStartup = 2;
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
