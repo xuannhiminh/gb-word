@@ -1524,18 +1524,21 @@ public class NUIDocView extends FrameLayout implements OnClickListener, OnTabCha
         this.mSavePdfButton = (LinearLayout) this.createToolbarButton(R.id.save_pdf_button);
 
         // Icon premium
+
+        boolean isPremium = IAPUtils.INSTANCE.isPremium();
+
         View view = findViewById(R.id.ic_save_premium);
-//        if (view != null) {
-//            view.setVisibility(IAPHelper.isUnlockFunction(IAPHelper.KEY_SAVE) ? GONE : VISIBLE);
-//        }
+        if (view != null) {
+            view.setVisibility(isPremium ? GONE : VISIBLE);
+        }
         view = findViewById(R.id.ic_save_as_premium);
-//        if (view != null) {
-//            view.setVisibility(IAPHelper.isUnlockFunction(IAPHelper.KEY_SAVE) ? GONE : VISIBLE);
-//        }
+        if (view != null) {
+            view.setVisibility(isPremium ? GONE : VISIBLE);
+        }
         view = findViewById(R.id.ic_save_pdf_premium);
-//        if (view != null) {
-//            view.setVisibility(IAPHelper.isUnlockFunction(IAPHelper.KEY_SAVE) ? GONE : VISIBLE);
-//        }
+        if (view != null) {
+            view.setVisibility(isPremium ? GONE : VISIBLE);
+        }
 
         this.mPrintButton = (LinearLayout) this.createToolbarButton(R.id.print_button);
         this.mShareButton = (LinearLayout) this.createToolbarButton(R.id.share_button);
