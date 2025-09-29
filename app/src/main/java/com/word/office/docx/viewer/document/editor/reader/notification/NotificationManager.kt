@@ -172,7 +172,7 @@ class NotificationManager(private val context: Context) {
         notificationID: Int? = null,
         buttonTitle: String? = null
     ): RemoteViews {
-        val remoteViews = RemoteViews(context.packageName, R.layout.notification_collapsed_custom)
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_collapsed_custom_2)
         remoteViews.setTextViewText(R.id.text_title, title)
         remoteViews.setTextViewText(R.id.text_content, content)
         buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, it) }
@@ -213,7 +213,7 @@ class NotificationManager(private val context: Context) {
         notificationID: Int? = null,
         buttonTitle: String? = null
     ): RemoteViews {
-        val remoteViews = RemoteViews(context.packageName, R.layout.notification_expand_custom)
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_expand_custom_2)
         remoteViews.setTextViewText(R.id.text_title, title)
         remoteViews.setTextViewText(R.id.text_content, content)
         buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, buttonTitle) }
