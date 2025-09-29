@@ -20,7 +20,9 @@
     <string name="intent_label_ppt_print">Imprimer PPT</string>
 
     <string name="start_free_trial">Start Free Trial</string>
-
+    <string name="congrats">Félicitations !</string>
+    <string name="congrats_subtext">Bienvenue à Premium,\n profitez des avantages</string>
+    <string name="ok_great">Ok, génial !</string>
     <string name="app_name">Docx Reader</string>
 
     <string name="add_in_fav">Ajouter dans les favoris</string>

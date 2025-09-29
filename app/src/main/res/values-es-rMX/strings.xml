@@ -21,7 +21,9 @@
     <string name="intent_label_ppt_print">Imprimir PPT</string>
 
     <string name="add_in_fav">Añadir a favoritos</string>
-
+    <string name="congrats">¡Felicidades!</string>
+    <string name="congrats_subtext">Bienvenido a Premium,\n disfruta los beneficios</string>
+    <string name="ok_great">¡Ok, excelente!</string>
     <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">Examinar más archivos</string>

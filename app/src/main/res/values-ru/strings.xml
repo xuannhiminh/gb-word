@@ -20,7 +20,9 @@
     <string name="intent_label_ppt_print">Печать PPT</string>
     <string name="click_back_to_app">Затем нажмите ⬅ для возврата в приложение</string>
     <string name="start_free_trial">Start Free Trial</string>
-
+    <string name="congrats">Поздравляем!</string>
+    <string name="congrats_subtext">Добро пожаловать в Premium,\n наслаждайтесь преимуществами</string>
+    <string name="ok_great">Хорошо, отлично!</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer">Установите <b>%s</b> как программу просмотра файлов Word по умолчанию</string>
 
     <string name="add_in_fav">Добавить в избранное</string>

@@ -21,7 +21,9 @@
     <string name="start_free_trial">Start Free Trial</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer"><b>%s</b> को अपना डिफ़ॉल्ट Word फ़ाइल दर्शक बनाएं</string>
 
-
+    <string name="congrats">बधाई हो!</string>
+    <string name="congrats_subtext">प्रीमियम में आपका स्वागत है,\n लाभों का आनंद लें</string>
+    <string name="ok_great">ठीक है, बढ़िया!</string>
     <string name="add_in_fav">पसंदीदा में जोड़ें</string>
 
     <string name="app_name">Docx Reader</string>

@@ -21,7 +21,9 @@
     <string name="start_free_trial">Start Free Trial</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer">Atur <b>%s</b> sebagai penampil file Word default Anda</string>
 
-
+    <string name="congrats">Selamat!</string>
+    <string name="congrats_subtext">Selamat datang di Premium,\n nikmati manfaatnya</string>
+    <string name="ok_great">Oke, hebat!</string>
     <string name="app_name">Docx Reader</string>
 
     <string name="add_in_fav">Tambahkan dalam favorit</string>

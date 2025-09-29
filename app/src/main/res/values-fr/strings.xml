@@ -22,7 +22,9 @@
     <string name="start_free_trial">Start Free Trial</string>
 
     <string name="app_name">Docx Reader</string>
-
+    <string name="congrats">Félicitations !</string>
+    <string name="congrats_subtext">Bienvenue dans Premium,\n profitez des avantages</string>
+    <string name="ok_great">Ok, super !</string>
     <string name="add_in_fav">Ajouter dans les favoris</string>
 
     <string name="browse_more_files">Parcourir plus de fichiers</string>

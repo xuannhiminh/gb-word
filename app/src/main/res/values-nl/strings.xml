@@ -25,6 +25,9 @@
     <string name="sort_by_size_desc">Bestandsgrootte: aflopend</string>
     <string name="replace_old_file">Oud bestand vervangen?</string>
     <string name="start_free_trial">Start Free Trial</string>
+    <string name="congrats">Gefeliciteerd!</string>
+    <string name="congrats_subtext">Welkom bij Premium,\n geniet van de voordelen</string>
+    <string name="ok_great">Oké, geweldig!</string>
 
     <string name="ok">OK</string>
     <string name="convert_to_pdf">Converteren naar PDF</string>

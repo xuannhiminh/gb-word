@@ -19,6 +19,9 @@
     <string name="sort_by">مرتب‌سازی بر اساس</string>
     <string name="sort_by_date">تاریخ ایجاد: صعودی</string>
     <string name="start_free_trial">Start Free Trial</string>
+    <string name="congrats">تبریک!</string>
+    <string name="congrats_subtext">به پرمیوم خوش آمدید،\nاز مزایا لذت ببرید</string>
+    <string name="ok_great">باشه، عالیه!</string>
 
     <string name="sort_by_date_desc">تاریخ ایجاد: نزولی</string>
     <string name="sort_by_name_asc">نام: الف تا ی</string>

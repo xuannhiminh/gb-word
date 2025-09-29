@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
@@ -79,8 +80,10 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
         initIAP()
 
         // Ẩn btnClose ban đầu
+        binding.btnClose.visibility = View.INVISIBLE
         binding.btnClose.alpha = 0f
         binding.btnClose.postDelayed({
+            binding.btnClose.visibility = View.VISIBLE
             binding.btnClose.animate().alpha(1f).setDuration(300).start()
         }, 3000)
     }
@@ -126,7 +129,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
 
 
     private fun showLoadedAdsInterstitial(interstitialAd: InterstitialAd?, complete: () -> Unit) {
-        Log.i("IapActivityV2", "showAdsInterstitial called with ad: $interstitialAd")
+        Log.i("IapActivity3", "showAdsInterstitial called with ad: $interstitialAd")
         Admob.getInstance().showInterAds(this, interstitialAd, object : AdCallback() {
             override fun onNextAction() {
                 complete.invoke()
@@ -138,18 +141,30 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
         if (IAPUtils.isPremium()) {
             TemporaryStorage.interAdPreloaded = null
         }
-        showLoadedAdsInterstitial(TemporaryStorage.interAdPreloaded) {
-            if (!isFromSplash) {
-                finish()
-                return@showLoadedAdsInterstitial
+        if (IAPUtils.isPremium()) {
+            proceedToNextSucess()     // đăng kí IAP thành công
+        } else {
+            showLoadedAdsInterstitial(TemporaryStorage.interAdPreloaded) {
+                // dăng kí thất bại thì ko vao màn thành công
+                proceedToNext()
             }
-            if (PreferencesUtils.getBoolean(PresKey.GET_START, true)) {
-                LanguageActivity.start(this)
-            } else {
-                MainActivity.start(this)
-            }
-            finish()
         }
+    }
+    private fun proceedToNextSucess() {
+        IapRegistrationSuccessfulActivity.start(this)
+        finish()
+    }
+    private fun proceedToNext() {
+        if (!isFromSplash) {
+            finish()    // vào từ main
+            return
+        }
+        if (PreferencesUtils.getBoolean(PresKey.GET_START, true)) {
+            LanguageActivity.start(this)    // lần đầu tiên
+        } else {
+            MainActivity.start(this)
+        }
+        finish()
     }
 
 
@@ -177,7 +192,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
 //                showFreeTrialDialog()
 //            } else {
 //                logEvent("purchase_month_pressed")
-//                IAPUtils.callSubscription(this@IapActivityV2, IAPUtils.KEY_PREMIUM, IAPUtils.KEY_PREMIUM_MONTHLY_PLAN)
+//                IAPUtils.callSubscription(this@IapActivity3, IAPUtils.KEY_PREMIUM, IAPUtils.KEY_PREMIUM_MONTHLY_PLAN)
 //            }
 //            IapRegistrationSuccessfulActivity.start(this)
             logEvent("purchase_week_pressed")
@@ -232,7 +247,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
     override fun onDestroy() {
         super.onDestroy()
         IAPUtils.unregisterListener(iBillingHandler)
-        AppOpenManager.getInstance().enableAppResume()
+        //AppOpenManager.getInstance().enableAppResume()
         TemporaryStorage.interAdPreloaded = null
     }
 
@@ -252,7 +267,6 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
                 params.putString(Param.TRANSACTION_ID, details?.purchaseData?.orderId )
                 firebaseAnalytics.logEvent(Event.PURCHASE, params)
             }
-            Toast.makeText(this@IapActivityV2, getString(R.string.you_premium), Toast.LENGTH_SHORT).show()
             updateViewBaseOnPremiumState()
         }
 
@@ -266,7 +280,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
             Log.d("IapActivity", "Billing error: $errorCode, ${error?.message}")
             // Log or handle errors here
             if (errorCode == 1) { // user cancel
-                if (PreferencesUtils.getBoolean(PresKey.GET_START, true)) {
+                if (PreferencesUtils.getBoolean(com.ezteam.baseproject.utils.PresKey.GET_START, true)) {
                     logEvent("purchase_cancelled_start")
                     //startRequestAllFilePermission()
                 } else {
@@ -275,7 +289,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
                 return
             } else if (errorCode == 3) { // Billing service unavailable
                 Toast.makeText(this@IapActivityV2, R.string.please_update_store, Toast.LENGTH_LONG).show()
-                if (PreferencesUtils.getBoolean(PresKey.GET_START, true)) {
+                if (PreferencesUtils.getBoolean(com.ezteam.baseproject.utils.PresKey.GET_START, true)) {
                     navigateToNextScreen()
                 }
                 return
@@ -291,7 +305,7 @@ class IapActivityV2 : PdfBaseActivity<ActivityIapV3Binding>() {
 
         override fun onBillingInitialized() {
             // Billing service is initialized, you can query products or subscriptions here
-            // Toast.makeText(this@IapActivityV2, "Billing initialized", Toast.LENGTH_SHORT).show()
+            // Toast.makeText(this@IapActivity3, "Billing initialized", Toast.LENGTH_SHORT).show()
             IAPUtils.loadOwnedPurchasesFromGoogleAsync {
                 updateViewBaseOnPremiumState()
             }

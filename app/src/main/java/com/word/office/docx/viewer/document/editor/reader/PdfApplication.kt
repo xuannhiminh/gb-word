@@ -37,6 +37,7 @@ import com.word.office.docx.viewer.document.editor.reader.common.LocaleManager
 import com.word.office.docx.viewer.document.editor.reader.di.appModule
 import com.word.office.docx.viewer.document.editor.reader.notification.NotificationManager
 import com.word.office.docx.viewer.document.editor.reader.screen.iap.IapActivity
+import com.word.office.docx.viewer.document.editor.reader.screen.iap.IapActivityV2
 import com.word.office.docx.viewer.document.editor.reader.screen.language.PreferencesHelper
 import com.word.office.docx.viewer.document.editor.reader.screen.start.SplashActivity
 import com.word.office.docx.viewer.document.editor.reader.utils.FirebaseRemoteConfigUtil
@@ -55,7 +56,7 @@ class PdfApplication: MyLibApplication() {
     override fun onCreate() {
         super.onCreate()
         AppOpenManager.getInstance().disableAppResumeWithActivity(SplashActivity::class.java)
-        AppOpenManager.getInstance().disableAppResumeWithActivity(IapActivity::class.java)
+        AppOpenManager.getInstance().disableAppResumeWithActivity(IapActivityV2::class.java)
         AppFlyer.getInstance().initAppFlyer(this, getString(R.string.app_flyer_id), true, false, true) // thay
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         PreferencesUtils.init(this)

@@ -26,7 +26,9 @@
     <string name="excel">Excel</string>
 
     <string name="ppt">PPT</string>
-
+    <string name="congrats">מזל טוב!</string>
+    <string name="congrats_subtext">ברוך הבא לפרימיום,\n תהנה מהיתרונות</string>
+    <string name="ok_great">אוקיי, נהדר!</string>
     <string name="remind_later">הזכר לי מאוחר יותר</string>
 
     <string name="please_rate">אנא בחר דירוג!!!</string>

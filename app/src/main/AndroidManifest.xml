@@ -1315,6 +1315,12 @@
             android:name="com.word.office.docx.viewer.document.editor.reader.screen.iap.IapActivityV2"
             android:exported="true" />
         <activity
+            android:name="com.word.office.docx.viewer.document.editor.reader.screen.iap.IapActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.word.office.docx.viewer.document.editor.reader.screen.iap.IapRegistrationSuccessfulActivity"
+            android:exported="true" />
+        <activity
             android:name="com.word.office.docx.viewer.document.editor.reader.screen.search.FeedBackActivity"
             android:exported="true" />
         <activity

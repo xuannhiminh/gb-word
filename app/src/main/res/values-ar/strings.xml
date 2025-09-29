@@ -24,6 +24,9 @@
     <string name="intent_label_pdf_doc">محرر مستندات</string>
     <string name="intent_label_doc_smart_editor">محرر مستندات ذكي</string>
     <string name="intent_label_doc_print">طباعة مستند</string>
+    <string name="congrats">تهانينا!</string>
+    <string name="congrats_subtext">مرحبًا بك في البريميوم،\nاستمتع بالمزايا</string>
+    <string name="ok_great">حسناً، رائع!</string>
 
     <string name="intent_label_excel_pdf">تحويل إكسل إلى PDF</string>
     <string name="intent_label_excel_reader">قارئ إكسل</string>

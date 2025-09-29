@@ -27,6 +27,9 @@
     <string name="ok">확인</string>
     <string name="start_free_trial">Start Free Trial</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer"><b>%s</b>을(를) 기본 Word 파일 뷰어로 설정하세요</string>
+    <string name="congrats">축하합니다!</string>
+    <string name="congrats_subtext">프리미엄에 오신 것을 환영합니다,\n혜택을 즐기세요</string>
+    <string name="ok_great">좋아, 멋져!</string>
 
     <string name="convert_to_pdf">PDF로 변환</string>
     <string name="pdf_file_name">PDF 파일 이름</string>

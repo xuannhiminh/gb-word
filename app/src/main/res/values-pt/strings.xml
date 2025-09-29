@@ -19,7 +19,9 @@
     <string name="intent_label_ppt_print">Imprimir PPT</string>
     <string name="click_back_to_app">Depois pressione ⬅ para voltar ao aplicativo</string>
 
-
+    <string name="congrats">Parabéns!</string>
+    <string name="congrats_subtext">Bem-vindo ao Premium,\n aproveite os benefícios</string>
+    <string name="ok_great">Ok, ótimo!</string>
     <string name="add_in_fav">Adicionar aos favoritos</string>
 
     <string name="app_name">Docx Reader</string>

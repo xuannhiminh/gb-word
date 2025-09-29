@@ -28,6 +28,9 @@
     <string name="convert_to_pdf">转换为 PDF</string>
     <string name="start_free_trial">Start Free Trial</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer">将 <b>%s</b> 设为默认的 Word 文件查看器</string>
+    <string name="congrats">恭喜！</string>
+    <string name="congrats_subtext">欢迎加入高级版，\n享受特权</string>
+    <string name="ok_great">好的，太棒了！</string>
 
     <string name="pdf_file_name">PDF 文件名</string>
     <string name="password">密码</string>

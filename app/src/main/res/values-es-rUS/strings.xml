@@ -25,7 +25,9 @@
     <string name="app_name">Docx Reader</string>
 
     <string name="browse_more_files">Examinar más archivos</string>
-
+    <string name="congrats">¡Felicidades!</string>
+    <string name="congrats_subtext">Bienvenido a Premium,\n disfruta de los beneficios</string>
+    <string name="ok_great">¡Ok, genial!</string>
     <string name="cancel">Cancelar</string>
 
     <string name="change_language">Cambiar idioma</string>
