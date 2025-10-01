@@ -172,7 +172,7 @@ class NotificationManager(private val context: Context) {
         notificationID: Int? = null,
         buttonTitle: String? = null
     ): RemoteViews {
-        val remoteViews = RemoteViews(context.packageName, R.layout.notification_collapsed_custom_2)
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_collapsed_custom)
         remoteViews.setTextViewText(R.id.text_title, title)
         remoteViews.setTextViewText(R.id.text_content, content)
         buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, it) }
@@ -213,7 +213,7 @@ class NotificationManager(private val context: Context) {
         notificationID: Int? = null,
         buttonTitle: String? = null
     ): RemoteViews {
-        val remoteViews = RemoteViews(context.packageName, R.layout.notification_expand_custom_2)
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_expand_custom)
         remoteViews.setTextViewText(R.id.text_title, title)
         remoteViews.setTextViewText(R.id.text_content, content)
         buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, buttonTitle) }
@@ -242,6 +242,111 @@ class NotificationManager(private val context: Context) {
         remoteViews.setOnClickPendingIntent(R.id.button_open, openAppPendingIntent)
 
          if( Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            val paddingInPx = context.resources.getDimensionPixelSize(R.dimen._12sdp)
+            remoteViews.setViewPadding(R.id.container, paddingInPx, paddingInPx, paddingInPx, paddingInPx)
+        }
+
+        return remoteViews
+    }
+    private fun createCustomNotificationViewNew(
+        title: String,
+        content: String,
+        filePath: String? = null,
+        notificationID: Int? = null,
+        buttonTitle: String? = null
+    ): RemoteViews {
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_collapsed_custom_4)
+        remoteViews.setTextViewText(R.id.text_title, title)
+       // remoteViews.setTextViewText(R.id.text_content, content)
+        buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, it) }
+
+        val openAppIntent = Intent(context, SplashActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            putExtra("${context.packageName}.isFromNotification", true)
+            notificationID?.let { putExtra("${context.packageName}.notificationID", it) }
+            filePath?.let { putExtra("${context.packageName}.filePath", it) }
+        }
+
+        val openAppPendingIntent = PendingIntent.getActivity(
+            context,
+            0,
+            openAppIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
+        remoteViews.setOnClickPendingIntent(R.id.container, openAppPendingIntent)
+        remoteViews.setOnClickPendingIntent(R.id.button_open, openAppPendingIntent)
+
+        if( Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            val paddingInPx = context.resources.getDimensionPixelSize(R.dimen._12sdp)
+            remoteViews.setViewPadding(R.id.container, paddingInPx, paddingInPx, paddingInPx, paddingInPx)
+        }
+
+        return remoteViews
+    }
+    private fun createCustomNotificationViewRecent(
+        title: String,
+        content: String,
+        filePath: String? = null,
+        notificationID: Int? = null,
+        buttonTitle: String? = null
+    ): RemoteViews {
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_collapsed_custom_3)
+        if( Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            val paddingInPx = context.resources.getDimensionPixelSize(R.dimen._12sdp)
+            remoteViews.setViewPadding(R.id.container, paddingInPx, paddingInPx, paddingInPx, paddingInPx)
+        }
+        setClickAction(context, remoteViews, R.id.button_open, SplashActivity::class.java)
+        return remoteViews
+    }
+    private fun createCustomNotificationBigViewNew(
+        title: String,
+        content: String,
+        filePath: String? = null,
+        notificationID: Int? = null,
+        buttonTitle: String? = null
+    ): RemoteViews {
+        val remoteViews = RemoteViews(context.packageName, R.layout.notification_expand_custom_2)
+        remoteViews.setTextViewText(R.id.text_title, title)
+
+        val safeTitle = title.orEmpty()
+        val spaceIndex = safeTitle.indexOfFirst { it == ' ' }
+
+        // Guard case: no space found (-1)
+        if (spaceIndex > 0 && spaceIndex < safeTitle.length) {
+            remoteViews.setTextViewText(R.id.text_title, safeTitle.substring(spaceIndex)) // after space
+            remoteViews.setTextViewText(R.id.icon_text_title, safeTitle.substring(0, spaceIndex)) // before space
+        } else {
+            // Fallback: show full title in one place or empty in the other
+            remoteViews.setTextViewText(R.id.text_title, safeTitle)
+            remoteViews.setTextViewText(R.id.icon_text_title, "\uD83D\uDCC1")
+        }
+
+        remoteViews.setTextViewText(R.id.text_content, content)
+        buttonTitle?.let { remoteViews.setTextViewText(R.id.button_open, buttonTitle) }
+
+        val fileExtension = filePath?.substringAfterLast(".")
+        val iconResource = FILE_EXTENSION_TO_ICON.getOrDefault(fileExtension, R.drawable.icon_pdf)
+        remoteViews.setImageViewResource(R.id.image_file_icon, iconResource)
+
+        val openAppIntent = Intent(context, SplashActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            putExtra("${context.packageName}.isFromNotification", true)
+            filePath?.let { putExtra("${context.packageName}.filePath", it) }
+            notificationID?.let { putExtra("${context.packageName}.notificationID", it) }
+        }
+
+        val openAppPendingIntent = PendingIntent.getActivity(
+            context,
+            0,
+            openAppIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
+        remoteViews.setOnClickPendingIntent(R.id.container, openAppPendingIntent)
+        remoteViews.setOnClickPendingIntent(R.id.button_open, openAppPendingIntent)
+
+        if( Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
             val paddingInPx = context.resources.getDimensionPixelSize(R.dimen._12sdp)
             remoteViews.setViewPadding(R.id.container, paddingInPx, paddingInPx, paddingInPx, paddingInPx)
         }
@@ -470,7 +575,7 @@ class NotificationManager(private val context: Context) {
 
         val notificationInfo = getNextNotificationInfo() ?: return
 
-        val customView = createCustomNotificationView(
+        val customView = createCustomNotificationViewNew(
             notificationInfo.first,
             notificationInfo.second,
             null,
@@ -478,7 +583,7 @@ class NotificationManager(private val context: Context) {
             notificationInfo.third,
             )
 
-        val customBigView = createCustomNotificationBigView(
+        val customBigView = createCustomNotificationBigViewNew(
             notificationInfo.first,
             notificationInfo.second,
             null,
@@ -566,8 +671,8 @@ class NotificationManager(private val context: Context) {
         )
         val buttonText = context.resources.getStringArray(R.array.notification_button2)[0]
 
-        val customView = createCustomNotificationView(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
-        val customBigView = createCustomNotificationBigView(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
+        val customView = createCustomNotificationViewNew(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
+        val customBigView = createCustomNotificationBigViewNew(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
 
         val notification = NotificationCompat.Builder(context, CALL_USE_APP_CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notitication)
@@ -592,8 +697,8 @@ class NotificationManager(private val context: Context) {
         val content = context.resources.getStringArray(R.array.notification_message2)[1]
         val buttonText = context.resources.getStringArray(R.array.notification_button2)[1]
 
-        val customView = createCustomNotificationView(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
-        val customBigView = createCustomNotificationBigView(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
+        val customView = createCustomNotificationViewNew(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
+        val customBigView = createCustomNotificationBigViewNew(title, content, filePath, CALL_USE_APP_NOTIFICATION_ID, buttonText)
 
         val notification = NotificationCompat.Builder(context, CALL_USE_APP_CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notitication)

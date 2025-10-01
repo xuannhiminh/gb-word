@@ -465,4 +465,6 @@
    <string name="feedback_disclaimer">このメールを送信することで、上記の情報を共有し、アプリの改善にご協力いただくことに同意したものとみなされます。</string>
     <string name="reload_file_successful">成功</string>
     <string name="update_required">このバージョンは古くなっています。アプリを更新してください</string>
+    <string name="read">読む</string>
+    <string name="your_recent_PDF_files_are_waiting">最近のPDFファイルが待機中です</string>
 </resources> 

@@ -558,4 +558,6 @@
     <string name="your_feedback">Masukan Anda</string>
    <string name="feedback_disclaimer">Dengan mengirim email ini, Anda setuju untuk membagikan informasi di atas dengan kami untuk membantu meningkatkan aplikasi.</string>
     <string name="update_required">Versi ini sudah usang. Silakan perbarui aplikasi</string>
+    <string name="read">Baca</string>
+    <string name="your_recent_PDF_files_are_waiting">File PDF terbaru Anda sedang menunggu</string>
 </resources>

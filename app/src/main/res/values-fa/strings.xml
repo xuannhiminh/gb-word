@@ -466,5 +466,7 @@
    <string name="feedback_disclaimer">با ارسال این ایمیل، شما موافقت می‌کنید اطلاعات فوق را با ما به اشتراک بگذارید تا به بهبود برنامه کمک کند.</string>
     <string name="update_required">این نسخه قدیمی است. لطفاً برنامه را به‌روزرسانی کنید</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer"><b>%s</b> را به عنوان نمایشگر پیش‌فرض فایل‌های Word تنظیم کنید</string>
+    <string name="read">خواندن</string>
+    <string name="your_recent_PDF_files_are_waiting">فایل‌های PDF اخیر شما در انتظار هستند</string>
 
 </resources> 

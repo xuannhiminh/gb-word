@@ -553,4 +553,6 @@
     <string name="your_feedback">Geri bildiriminiz</string>
    <string name="feedback_disclaimer">Bu e-postayı göndererek, uygulamayı iyileştirmemize yardımcı olmak için yukarıdaki bilgileri bizimle paylaşmayı kabul etmiş olursunuz.</string>
     <string name="update_required">Bu sürüm eski. Lütfen uygulamayı güncelleyin</string>
+    <string name="read">Oku</string>
+    <string name="your_recent_PDF_files_are_waiting">Son PDF dosyalarınız sizi bekliyor</string>
 </resources>

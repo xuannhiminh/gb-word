@@ -548,5 +548,7 @@
    <string name="feedback_disclaimer">Al enviar este correo electrónico, aceptas compartir la información anterior con nosotros para ayudar a mejorar la aplicación.</string>
     <string name="update_required">Esta versión está obsoleta. Actualiza la aplicación</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer">Establece <b>%s</b> como tu visor predeterminado de archivos Word</string>
+    <string name="read">Leer</string>
+    <string name="your_recent_PDF_files_are_waiting">Tus archivos PDF recientes te están esperando</string>
 
 </resources>

@@ -450,5 +450,7 @@
    <string name="feedback_disclaimer">Indem Sie diese E-Mail senden, stimmen Sie zu, die oben genannten Informationen mit uns zu teilen, um die App zu verbessern.</string>
     <string name="update_required">Diese Version ist veraltet. Bitte aktualisiere die App</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer">Legen Sie <b>%s</b> als Ihren Standard-Word-Dateibetrachter fest</string>
+    <string name="read">Lesen</string>
+    <string name="your_recent_PDF_files_are_waiting">Ihre letzten PDF-Dateien warten auf Sie</string>
 
 </resources> 

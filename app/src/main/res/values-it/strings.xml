@@ -469,4 +469,6 @@
     <string name="your_feedback">Il tuo feedback</string>
    <string name="feedback_disclaimer">Inviando questa email, accetti di condividere le informazioni di cui sopra con noi per contribuire a migliorare l\'app.</string>
     <string name="update_required">Questa versione è obsoleta. Aggiorna l’app</string>
+    <string name="read">Leggi</string>
+    <string name="your_recent_PDF_files_are_waiting">I tuoi file PDF recenti ti stanno aspettando</string>
 </resources> 

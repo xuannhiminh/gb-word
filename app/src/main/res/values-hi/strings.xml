@@ -550,4 +550,6 @@
     <string name="your_feedback">आपकी प्रतिक्रिया</string>
    <string name="feedback_disclaimer">इस ईमेल को भेजकर, आप ऐप को बेहतर बनाने में हमारी सहायता के लिए उपरोक्त जानकारी साझा करने के लिए सहमत होते हैं।</string>
     <string name="update_required">यह संस्करण पुराना हो गया है। कृपया ऐप अपडेट करें</string>
+    <string name="read">पढ़ें</string>
+    <string name="your_recent_PDF_files_are_waiting">आपकी हाल की PDF फ़ाइलें आपका इंतजार कर रही हैं</string>
 </resources>

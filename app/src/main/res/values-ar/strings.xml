@@ -546,5 +546,7 @@
     <string name="start_free_trial">ابدأ التجربة المجانية</string>
     <string name="update_required">هذا الإصدار قديم. يرجى تحديث التطبيق</string>
     <string name="set_docx_reader_as_your_default_word_file_viewer">تعيين <b>%s</b> كعارض افتراضي لملفات Word</string>
+    <string name="read">اقرأ</string>
+    <string name="your_recent_PDF_files_are_waiting">ملفات PDF الأخيرة الخاصة بك بانتظارك</string>
 
 </resources>

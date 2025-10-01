@@ -445,4 +445,6 @@
     <string name="your_feedback">Ваш відгук</string>
    <string name="feedback_disclaimer">Надсилаючи цей лист, ви погоджуєтеся поділитися наведеними вище даними з нами, щоб допомогти покращити додаток.</string>
     <string name="update_required">Ця версія застаріла. Будь ласка, оновіть додаток</string>
+    <string name="read">Читати</string>
+    <string name="your_recent_PDF_files_are_waiting">Ваші останні PDF-файли чекають на вас</string>
 </resources> 

@@ -466,4 +466,6 @@
    <string name="feedback_disclaimer">이 이메일을 보내시면 위 정보를 공유하여 앱 개선을 돕는 데 동의하게 됩니다.</string>
     <string name="reload_file_successful">성공</string>
     <string name="update_required">이 버전은 오래되었습니다. 앱을 업데이트하세요</string>
+    <string name="read">읽기</string>
+    <string name="your_recent_PDF_files_are_waiting">최근 PDF 파일이 기다리고 있습니다</string>
 </resources> 

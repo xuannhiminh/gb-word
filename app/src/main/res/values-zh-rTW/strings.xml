@@ -444,4 +444,6 @@
     <string name="your_feedback">您的回</string>
    <string name="feedback_disclaimer">傳送此電子郵件即表示您同意與我們共享上述資訊，以協助改進此應用程</string>
     <string name="update_required">此版本已過時。請更新應用程式</string>
+    <string name="read">閱讀</string>
+    <string name="your_recent_PDF_files_are_waiting">您最近的 PDF 檔案正在等候</string>
 </resources> 
