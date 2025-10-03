@@ -418,11 +418,13 @@ class MainActivity : PdfBaseActivity<ActivityMainBinding>() {
                                 }
                             }
                         }.addOnFailureListener { e ->
-                            Toast.makeText(
-                                this,
-                                getString(R.string.app_update_fail),
-                                Toast.LENGTH_LONG
-                            ).show();
+                            if (!BuildConfig.DEBUG) {
+                                Toast.makeText(
+                                    this,
+                                    getString(R.string.app_update_fail),
+                                    Toast.LENGTH_LONG
+                                ).show();
+                            }
                             Log.e(TAG, "Init View Failed to check for updates: ${e.message}")
                         }
                 }
