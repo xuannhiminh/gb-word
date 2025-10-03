@@ -19,7 +19,7 @@ public abstract class MyLibApplication extends AdsApplication {
     public MyLibApplication() {
     }
 
-    private void a() {
+    private void ab() {
         try {
             BaseOpenFileActivity.b();
         } catch (Exception e) {
@@ -37,7 +37,7 @@ public abstract class MyLibApplication extends AdsApplication {
     }
 
     public void onCreate() {
-        this.a();
+        this.ab();
         super.onCreate();
         context = this;
     }
