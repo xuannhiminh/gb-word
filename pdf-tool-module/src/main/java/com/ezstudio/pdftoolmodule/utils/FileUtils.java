@@ -40,9 +40,7 @@ public class FileUtils {
                 return new ArrayList<>();
             }
         } else if (!PermissionUtils.checkPermissonAccept(context,
-                Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU ?
-                android.Manifest.permission.READ_MEDIA_IMAGES :
-                android.Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                Manifest.permission.READ_EXTERNAL_STORAGE)) {
             return new ArrayList<>();
         }
         ArrayList arrFile = new ArrayList();
