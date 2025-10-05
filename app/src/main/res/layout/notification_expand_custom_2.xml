@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_notification_card"
     android:orientation="vertical"
-    android:paddingVertical="@dimen/_12sdp"
+    android:id="@+id/container"
+    android:paddingBottom="@dimen/_12sdp"
     android:paddingHorizontal="@dimen/_24sdp"
     android:gravity="center_horizontal">
 
@@ -24,8 +25,7 @@
         android:text="📂"
         android:textStyle="bold"
         android:textColor="@color/text1"
-        android:textSize="@dimen/_60ssp"
-        android:layout_marginBottom="@dimen/_4sdp"/>
+        android:textSize="@dimen/_60ssp"/>
 
     <TextView
         android:id="@+id/text_title"
@@ -35,6 +35,7 @@
         android:textStyle="bold"
         android:textColor="@color/text1"
         android:textSize="18sp"
+        android:gravity="center_horizontal"
         android:layout_marginBottom="@dimen/_4sdp"/>
 
     <TextView
@@ -45,8 +46,7 @@
         android:textColor="@color/text1"
         android:textSize="14sp"
         android:gravity="center"
-        android:textFontWeight="400"
-        android:layout_marginBottom="@dimen/_9sdp"/>
+        android:textFontWeight="400"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

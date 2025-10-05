@@ -4,6 +4,7 @@
     android:orientation="horizontal"
     android:background="@drawable/bg_notification_card"
     android:layout_width="match_parent"
+    android:id="@+id/container"
     android:paddingVertical="@dimen/_4sdp"
     android:paddingStart="@dimen/_8sdp"
     android:paddingEnd="@dimen/_2sdp"
