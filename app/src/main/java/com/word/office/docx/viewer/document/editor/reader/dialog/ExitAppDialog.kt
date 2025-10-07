@@ -61,11 +61,7 @@ class ExitAppDialog : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (TemporaryStorage.isLoadAds) {
-            loadNativeNomedia()
-        } else {
-            Log.d("ExitAppDialog", "Not load Ads")
-        }
+        //loadNativeNomedia()
         isViewDestroyed = false
         try {
             firebaseAnalytics = FirebaseAnalytics.getInstance(requireContext())
