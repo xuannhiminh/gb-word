@@ -238,7 +238,7 @@ class PageView(context: Context, attrs: AttributeSet?) : AppCompatImageView(cont
 //    }
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-
+        try  {
         /*Delete*/
         selectDelete?.let {
             Paint().apply {
@@ -338,6 +338,9 @@ class PageView(context: Context, attrs: AttributeSet?) : AppCompatImageView(cont
                     })
                 }
             }
+        }
+        } catch (e: Exception) {
+            Log.d("PageView", "onDraw: ", e)
         }
     }
 
