@@ -568,4 +568,5 @@
     <string name="update_required">Phiên bản này đã quá cũ. Vui lòng cập nhật ứng dụng</string>
     <string name="read">Đọc</string>
     <string name="your_recent_PDF_files_are_waiting">Các tệp PDF gần đây của bạn đang chờ</string>
+    <string name="leave_the_app">Thoát ứng dụng?</string>
 </resources>

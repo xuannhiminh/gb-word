@@ -608,5 +608,6 @@
     </string-array>
     <string name="read">לקרוא</string>
     <string name="your_recent_PDF_files_are_waiting">קבצי ה-PDF האחרונים שלך מחכים לך</string>
+    <string name="leave_the_app">לצאת מהאפליקציה?</string>
 
 </resources>

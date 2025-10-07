@@ -467,4 +467,5 @@
     <string name="update_required">このバージョンは古くなっています。アプリを更新してください</string>
     <string name="read">読む</string>
     <string name="your_recent_PDF_files_are_waiting">最近のPDFファイルが待機中です</string>
+    <string name="leave_the_app">アプリを終了しますか？</string>
 </resources> 

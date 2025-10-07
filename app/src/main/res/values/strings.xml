@@ -643,4 +643,5 @@
     <string name="ok_great">Ok, Great!</string>
     <string name="read">Read</string>
     <string name="your_recent_PDF_files_are_waiting">Your recent PDF files are waiting</string>
+    <string name="leave_the_app">Leave the app?</string>
 </resources>

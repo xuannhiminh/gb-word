@@ -552,4 +552,5 @@
     <string name="update_required">यह संस्करण पुराना हो गया है। कृपया ऐप अपडेट करें</string>
     <string name="read">पढ़ें</string>
     <string name="your_recent_PDF_files_are_waiting">आपकी हाल की PDF फ़ाइलें आपका इंतजार कर रही हैं</string>
+    <string name="leave_the_app">ऐप छोड़ें?</string>
 </resources>

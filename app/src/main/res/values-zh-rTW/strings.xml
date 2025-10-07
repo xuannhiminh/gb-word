@@ -446,4 +446,5 @@
     <string name="update_required">此版本已過時。請更新應用程式</string>
     <string name="read">閱讀</string>
     <string name="your_recent_PDF_files_are_waiting">您最近的 PDF 檔案正在等候</string>
+    <string name="leave_the_app">要離開應用程式嗎？</string>
 </resources> 

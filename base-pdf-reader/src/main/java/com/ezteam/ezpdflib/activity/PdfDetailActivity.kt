@@ -85,6 +85,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.jaredrummler.android.colorpicker.ColorPickerDialog
 import com.jaredrummler.android.colorpicker.ColorPickerDialogListener
 import com.nlbn.ads.callback.AdCallback
@@ -556,7 +557,10 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
     private var zoomJob: Job? = null
     private val lastRenderedZoom = mutableMapOf<Int, Float>() // pageIndex -> last zoom we rendered
     private val MAX_ZOOM= 3.5f
-
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
+    private fun logEvent(event: String) {
+        firebaseAnalytics.logEvent(event, Bundle())
+    }
     @SuppressLint("SetTextI18n")
     private fun initListener() {
         binding.llToolbar.ivRemoveAds.setOnClickListener {
@@ -1037,6 +1041,7 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.iv_setting -> {
+                logEvent("detail_setting")
                 if (aVoidDoubleClick() || isFinishing || isDestroyed)
                     return
                 val bottomSheet = BottomSheetDetailFunction(this::bottomFuncListener)
@@ -1047,6 +1052,7 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
             }
 
             R.id.iv_search -> {
+                logEvent("detail_search")
                 viewmodel.mode.postValue(Mode.Search)
             }
 
@@ -1686,20 +1692,24 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
         if (aVoidDoubleClick()) return false
         when (item.itemId) {
             R.id.menu_note -> {
+                logEvent("func_detail_note")
                 showBottomNote()
             }
 
             R.id.menu_signature -> {
+                logEvent("func_detail_sign_pdf")
                 launchActivity<SignatureActivity>(Config.IntentResult.SELECT_SIGNATURE) {}
             }
 
             R.id.menu_add_image -> {
+                logEvent("func_detail_add_image")
                 launchActivity<PickImageActivity>(Config.IntentResult.SELECT_IMAGE) {
                     putExtra(PickImageActivity.KEY_PICK_ONE, true)
                 }
             }
 
             R.id.menu_add_text -> {
+                logEvent("func_detail_scanner")
                 viewmodel.mode.postValue(Mode.AddText)
             }
         }

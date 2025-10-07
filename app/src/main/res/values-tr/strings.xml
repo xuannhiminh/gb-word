@@ -555,4 +555,5 @@
     <string name="update_required">Bu sürüm eski. Lütfen uygulamayı güncelleyin</string>
     <string name="read">Oku</string>
     <string name="your_recent_PDF_files_are_waiting">Son PDF dosyalarınız sizi bekliyor</string>
+    <string name="leave_the_app">Uygulamadan çıkılsın mı?</string>
 </resources>

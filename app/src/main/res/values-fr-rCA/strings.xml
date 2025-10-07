@@ -550,5 +550,6 @@
     <string name="set_docx_reader_as_your_default_word_file_viewer">Définir <b>%s</b> comme visionneuse de fichiers Word par défaut</string>
     <string name="read">Lire</string>
     <string name="your_recent_PDF_files_are_waiting">Vos fichiers PDF récents vous attendent</string>
+    <string name="leave_the_app">Quitter l’app ?</string>
 
 </resources>

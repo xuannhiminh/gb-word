@@ -551,4 +551,5 @@
     <string name="update_required">Esta versão está desatualizada. Atualize o aplicativo</string>
     <string name="read">Ler</string>
     <string name="your_recent_PDF_files_are_waiting">Seus arquivos PDF recentes estão esperando por você</string>
+    <string name="leave_the_app">Sair da aplicação?</string>
 </resources>

@@ -23,6 +23,7 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.nlbn.ads.callback.NativeCallback
 import com.nlbn.ads.util.Admob
 import org.apache.commons.io.FilenameUtils
@@ -42,7 +43,10 @@ class BottomSheetDetailFunction(
     private lateinit var binding: LibBottomSheetDetailBinding
     private lateinit var detailViewmodel: DetailViewmodel
     private var isContinuous = false
-
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
+    private fun logEvent(event: String) {
+        firebaseAnalytics.logEvent(event, Bundle())
+    }
 
     private var isAdLoaded = false
     override fun onCreateDialog(savedInstanceState: Bundle?): BottomSheetDialog {
@@ -144,6 +148,7 @@ class BottomSheetDetailFunction(
     }
     private fun initListener() {
         binding.funcContinuousPage.setOnClickListener {
+            logEvent("func_detail_continuous_page")
             PreferencesUtils.putBoolean(
                 PreferencesKey.KeyPress.PDF_VIEWER_CONTINOUOUS,
                 !isContinuous
@@ -158,6 +163,7 @@ class BottomSheetDetailFunction(
         }
 
         binding.funcGoToPage.setOnClickListener {
+            logEvent("func_detail_goto_page")
             listener?.invoke(FunctionState.GO_PAGE)
             dismiss()
         }
@@ -167,11 +173,13 @@ class BottomSheetDetailFunction(
         }
 
         binding.funcPrint.setOnClickListener {
+            logEvent("func_detail_print")
             listener?.invoke(FunctionState.PRINT)
             dismiss()
         }
 
         binding.funcInfo.setOnClickListener {
+            logEvent("func_detail_detail")
             listener?.invoke(FunctionState.DETAIL)
             dismiss()
         }
@@ -187,6 +195,7 @@ class BottomSheetDetailFunction(
         }
 
         binding.funcThumbnail.setOnClickListener {
+            logEvent("func_detail_thumbnail")
             listener?.invoke(FunctionState.THUMBNAIL)
             dismiss()
         }
@@ -201,11 +210,13 @@ class BottomSheetDetailFunction(
         }
 
         binding.funcShare.setOnClickListener {
+            logEvent("func_detail_share")
             listener?.invoke(FunctionState.SHARE)
             dismiss()
         }
 
         binding.funcTools.setOnClickListener {
+            logEvent("func_detail_tool")
             listener?.invoke(FunctionState.TOOL)
             dismiss()
         }

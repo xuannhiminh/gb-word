@@ -367,4 +367,5 @@
    <string name="feedback_disclaimer">By sending this email, you agree to share the above information with us to help improve the app.</string>
     <string name="read">Read</string>
     <string name="your_recent_PDF_files_are_waiting">Your recent PDF files are waiting</string>
+    <string name="leave_the_app">Leave the app?</string>
 </resources>

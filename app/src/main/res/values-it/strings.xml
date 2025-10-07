@@ -471,4 +471,5 @@
     <string name="update_required">Questa versione è obsoleta. Aggiorna l’app</string>
     <string name="read">Leggi</string>
     <string name="your_recent_PDF_files_are_waiting">I tuoi file PDF recenti ti stanno aspettando</string>
+    <string name="leave_the_app">Uscire dall’app?</string>
 </resources> 

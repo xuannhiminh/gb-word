@@ -551,4 +551,5 @@
     <string name="update_required">Эта версия устарела. Пожалуйста, обновите приложение</string>
     <string name="read">Читать</string>
     <string name="your_recent_PDF_files_are_waiting">Ваши последние PDF-файлы ждут вас</string>
+    <string name="leave_the_app">Выйти из приложения?</string>
 </resources>

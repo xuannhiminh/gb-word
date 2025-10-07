@@ -135,20 +135,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_pdf"
+                android:id="@+id/tv_word"
                 android:textAllCaps="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:fontFamily="sans-serif"
                 android:textFontWeight="500"
-                android:text="@string/pdf"
+                android:text="@string/word"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:paddingVertical="8dp" />
 
             <View
-                android:id="@+id/underline_pdf"
+                android:id="@+id/underline_word"
                 android:layout_width="wrap_content"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"
@@ -164,20 +164,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_word"
+                android:id="@+id/tv_pdf"
                 android:textAllCaps="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:fontFamily="sans-serif"
                 android:textFontWeight="500"
-                android:text="@string/word"
+                android:text="@string/pdf"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:paddingVertical="8dp" />
 
             <View
-                android:id="@+id/underline_word"
+                android:id="@+id/underline_pdf"
                 android:layout_width="wrap_content"
                 android:layout_height="2dp"
                 android:background="@color/dark_gray"

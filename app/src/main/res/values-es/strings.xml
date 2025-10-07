@@ -552,5 +552,6 @@
     <string name="set_docx_reader_as_your_default_word_file_viewer">Configura <b>%s</b> como tu visor predeterminado de archivos Word</string>
     <string name="read">Leer</string>
     <string name="your_recent_PDF_files_are_waiting">Tus archivos PDF recientes te están esperando</string>
+    <string name="leave_the_app">¿Salir de la aplicación?</string>
 
 </resources>

@@ -468,5 +468,6 @@
     <string name="set_docx_reader_as_your_default_word_file_viewer"><b>%s</b> را به عنوان نمایشگر پیش‌فرض فایل‌های Word تنظیم کنید</string>
     <string name="read">خواندن</string>
     <string name="your_recent_PDF_files_are_waiting">فایل‌های PDF اخیر شما در انتظار هستند</string>
+    <string name="leave_the_app">خروج از برنامه؟</string>
 
 </resources> 

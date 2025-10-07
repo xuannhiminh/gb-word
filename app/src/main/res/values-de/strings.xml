@@ -452,5 +452,6 @@
     <string name="set_docx_reader_as_your_default_word_file_viewer">Legen Sie <b>%s</b> als Ihren Standard-Word-Dateibetrachter fest</string>
     <string name="read">Lesen</string>
     <string name="your_recent_PDF_files_are_waiting">Ihre letzten PDF-Dateien warten auf Sie</string>
+    <string name="leave_the_app">Quitter l’app ?</string>
 
 </resources> 
