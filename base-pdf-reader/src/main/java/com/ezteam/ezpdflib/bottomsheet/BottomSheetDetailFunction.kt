@@ -43,9 +43,13 @@ class BottomSheetDetailFunction(
     private lateinit var binding: LibBottomSheetDetailBinding
     private lateinit var detailViewmodel: DetailViewmodel
     private var isContinuous = false
-    private lateinit var firebaseAnalytics: FirebaseAnalytics
+
     private fun logEvent(event: String) {
-        firebaseAnalytics.logEvent(event, Bundle())
+        try {
+            FirebaseAnalytics.getInstance(requireContext()).logEvent(event, Bundle())
+        } catch (e: Exception) {
+            Log.e("DefaultReaderGuideDialog", "Error initializing FirebaseAnalytics $e")
+        }
     }
 
     private var isAdLoaded = false

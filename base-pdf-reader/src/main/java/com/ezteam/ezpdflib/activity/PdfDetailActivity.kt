@@ -557,9 +557,12 @@ open class PdfDetailActivity : BasePdfViewerActivity(), MyRecyclerView.TouchList
     private var zoomJob: Job? = null
     private val lastRenderedZoom = mutableMapOf<Int, Float>() // pageIndex -> last zoom we rendered
     private val MAX_ZOOM= 3.5f
-    private lateinit var firebaseAnalytics: FirebaseAnalytics
     private fun logEvent(event: String) {
-        firebaseAnalytics.logEvent(event, Bundle())
+        try {
+            FirebaseAnalytics.getInstance(this).logEvent(event, Bundle())
+        } catch (e: Exception) {
+            Log.e("DefaultReaderGuideDialog", "Error initializing FirebaseAnalytics $e")
+        }
     }
     @SuppressLint("SetTextI18n")
     private fun initListener() {
