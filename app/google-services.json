@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351100711379",
+    "project_id": "gb-28-docx-reader",
+    "storage_bucket": "gb-28-docx-reader.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351100711379:android:45f56ca6b88719a0c3bf26",
+        "android_client_info": {
+          "package_name": "com.word.office.docx.viewer.document.editor.reader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQS3Pp7UWb9ZdOESf9PK2EDcByF9gj_VE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
